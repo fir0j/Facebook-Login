@@ -35,9 +35,29 @@ table {
 	background-image: linear-gradient(to bottom, rgba(253, 253, 253, 0.99), rgba(4, 51, 145, 0.1));
 }
 
+main {
+	height: 70vh;
+}
+
+footer {
+	font-size: 0.1rem;
+}
+
 span {
 	color: rgb(13, 13, 175);
 	cursor: pointer;
+}
+
+.languages > * {
+	margin-right: 0.3rem;
+}
+
+.fb-features > * {
+	margin-right: 0.1rem;
+}
+
+.additional-features > * {
+	margin-right: 0.1rem;
 }
 
 select {
@@ -55,7 +75,7 @@ select {
 
 .help {
 	font-size: 0.45rem;
-	background-color: rgba(128, 128, 128, 0.2);
+	background-color: rgba(128, 128, 128, 1);
 	cursor: pointer;
 }
 
@@ -76,5 +96,34 @@ select {
 
 	.left-text {
 		font-size: 0.6rem;
+	}
+}
+
+@media only screen and (min-device-width: 640px) {
+	footer {
+		font-size: 0.5rem;
+	}
+	.languages > * {
+		margin-right: 1rem;
+	}
+
+	.fb-features > * {
+		margin-right: 1rem;
+	}
+
+	.additional-features > * {
+		margin-right: 1rem;
+	}
+}
+
+@media only screen and (min-device-width: 768px) {
+	footer {
+		font-size: 0.6rem;
+	}
+}
+
+@media only screen and (min-device-width: 768px) {
+	footer {
+		font-size: 0.8rem;
 	}
 }

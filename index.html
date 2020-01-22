@@ -9,13 +9,13 @@
      <link rel="stylesheet" href="tailwind.min.css">
      <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="h-screen">
 
-    <header class="nav-bar-background sm:py-1 md:pt-2 md:pb-2">
+    <header class="nav-bar-background sm:py-1 md:pt-2">
         <nav class="flex justify-between">
             <ul class=" hidden lg:flex"></ul>
-            <ul class="w-7/12 pl-1 flex justify-start self-end items-center text-2xl lg:max-w-lg xl:nav-height xl:text-4xl text-gray-100  font-extrabold">Facebook</ul>
-            <ul class="w-5/12 xl:nav-height flex justify-end items-center lg:max-w-lg">
+            <ul class="w-7/12 pl-1 flex justify-start self-end items-center text-2xl lg:max-w-md xl:nav-height xl:text-4xl text-gray-100  font-extrabold">Facebook</ul>
+            <ul class="w-5/12 xl:nav-height flex justify-end items-center lg:max-w-md">
                 <form class="w-full text-xs xl:text-sm text-gray-100">
                     <table class="w-full">
                         <tr class="sm:text-xs">
@@ -25,7 +25,7 @@
                         <tr>
                             <td><div class="email"><input type="text" class=" w-11/12 h-1 px-1 py-2 sm:w-24 sm:h-4 lg:w-40 lg:h-5 text-xs text-gray-800   "/></div></td>
                             <td><div class="password"><input type="password" class=" w-11/12 h-1 px-1 py-2 mr-1 text-xs sm:w-24 sm:h-4 lg:w-40 lg:h-5 lg:h-5  md:text-sm text-gray-800   "/></div></td>
-                            <td><div><button type="button" class=" w-6 mr-1 sm:w-10 sm:h-4 md:h-6 md:w-auto md:px-1 xl:text-xs  border border-gray-800 font-bold nav-button-background">Log In</button></div></td>
+                            <td><div><button type="button" class=" w-6 mr-1 sm:w-10 sm:h-4 md:h-6 md:w-auto md:px-1 sm:pb-4 md:pb-0 sm:text-xs  border border-gray-800 font-bold nav-button-background">Log In</button></div></td>
                         </tr>
                         <tr colspan="2">
                             <td></td>
@@ -40,14 +40,14 @@
         </nav>
     </header>
 
-    <main class="flex justify-between h-screen max-h-screen bg-gray-300 main-bg-gradient">
+    <main class="flex justify-between main-bg-gradient">
         <ul class="hidden lg:flex"></ul>
-        <ul class="w-7/12 sm:pt-2 lg:max-w-lg left-text">
+        <ul class="w-7/12 sm:pt-2 lg:max-w-md left-text">
             <p class="px-1 pt-3 sm:text-sm lg:text-base text-blue-900 font-bold">Facebook helps you connect and share with the</p>
             <p class="px-1 sm:text-sm lg:text-base text-blue-900 font-bold">people in your life.</p>
         </ul>
 
-        <ul class="w-5/12 sm:pt-2 lg:max-w-lg">
+        <ul class="w-5/12 sm:pt-2 lg:max-w-md">
             <p class=" mt-2 text-sm sm:text-base lg:text-lg text-gray-800 font-extrabold">Create an account</p>
             <p class="text-sm lg:text-base text-gray-800">it's quick and easy.</p>
 
@@ -99,7 +99,7 @@
                         </script>
                     </select>
 
-                    <button type="button" class=" help w-4 h-4 lg:w-6 lg:h-6 border rounded-full">?</button>
+                    <button type="button" class=" help w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 border text-gray-100 rounded-full font-bold">?</button>
 
                     <p class="mb-1 sm:mb-2 mt-2 text-xs sm:text-sm lg:text-base text-gray-700">Gender</p>
                     <div class=" mb-2 flex">
@@ -118,7 +118,7 @@
                                     <input  class="mr-1" type="radio" name="gender" value="male">
                                     <p class="sm:text-xs lg:text-sm">Others</p>
                                 </div>
-                                <button type="button" class=" help w-4 h-4 lg:w-6 lg:h-6 border rounded-full">?</button>
+                                <button type="button" class=" help ml-1 sm:ml-0 w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-gray-100 border rounded-full font-bold">?</button>
                             </div>
 
                         </form>
@@ -144,10 +144,65 @@
         <ul class="border hidden lg:flex"></ul>
     </main>
 
-    <footer class="absolute bottom-0 w-full bg-gray-100">
-        <div class="py-3 flex w-full justify-center">Country</div>
-        <div class="py-3 flex w-full justify-center">footer link</div>
-        <div class="py-3 flex w-full justify-center">@Copyright</div>
+    <footer class="absolute bottom-0 w-full">
+        <div class="relative flex justify-between w-full">
+            <ul class=" hidden lg:flex"></ul>
+            <ul class="relative border w-full max-w-6xl">
+                <div class="py-3 flex w-full">
+                    <p class="languages">
+                        <span>English (UK)</span>
+                        <span>ಕನ್ನಡ</span>
+                        <span>اردو</span>
+                        <span>मराठी</span>
+                        <span>తెలుగు</span>
+                        <span>हिन्दी</span>
+                        <span>தமிழ்</span>
+                        <span>മലയാളം</span>
+                        <span>বাংলা</span>
+                        <span>ગુજરાતી</span>
+                        <span> ਪੰਜਾਬੀ</span>
+                    </p>
+                </div>
+                <hr>
+                <div class="py-3 flex w-full">
+                    <div>
+        
+                        <p class="fb-features">
+                            <span>Sign Up</span>
+                            <span>Log In</span>
+                            <span>Messenger</span>
+                            <span>Facebook Lite </span>
+                            <span>People</span>
+                            <span>Pages</span>
+                            <span>Page Categories</span>
+                            <span>Games</span>
+                            <span>Location</span>
+                            <span>Marketplace</span>
+                            <span>Group</span>
+                            <span>Instagram</span>
+                        </p>
+        
+                        <p class="additional-features">
+                            <span>Local</span>
+                            <span>Fundraisers</span>
+                            <span>Services</span>
+                            <span>About</span>
+                            <span>Create ad</span>
+                            <span>Create Page</span>
+                            <span>Developers</span>
+                            <span>Careers</span>
+                            <span>Privacy</span>
+                            <span>Cookies</span>
+                            <span>AdChoices</span>
+                            <span>Terms</span>
+                            <span>Help</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="py-3 flex w-full">Facebook &copy 2020</div>
+            </ul>
+            <ul class=" hidden lg:flex"></ul>
+        </div>
     </footer>
 
 </body>
