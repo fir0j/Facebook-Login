@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+:root {
+	--nav-bar-background: #3b5998;
+	--primary-button-background: #4267b2;
+
+	--primary-text: #1c1e21;
+	--warning: hsl(40, 89%, 52%);
+	--highlight-cell-background: #ecf3ff;
+	--green-30: #86df81;
+	--green-55: #00a400;
+	--green-60: #008c00;
+	--mobile-wash: #ccd0d5;
+	--placeholder-text: #8d949e;
+	--primary-button-pressed: #77a7ff;
+	--primary-button-pressed: #77a7ffd5;
+	--web-wash: #f0f2f5;
+}
+
+.nav-bar-background {
+	background-color: var(--nav-bar-background);
+}
+
+.nav-button-background {
+	background-color: var(--primary-button-background);
+}
+
+.nav-height {
+	height: 54px;
+}
+
+table {
+	text-align: left;
+	font-size: 0.2rem;
+}
+
+.textAboveImage {
+	color: #0e385f;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 29px;
+	margin-top: 40px;
+	width: 450px;
+	word-spacing: -1px;
+}
+
+body {
+	font-family: 'Lucida Grande', tahoma, verdana, arial, sans-serif;
+}
+
+@media only screen and (min-device-width: 480px) {
+	table .email,
+	.password {
+		width: fit-content;
+		font-size: 0.4rem;
+	}
+
+	.forgot {
+		font-size: 0.5rem;
+	}
+}
