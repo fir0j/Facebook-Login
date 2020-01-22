@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Facebook-log in or sign up</title>
-    <link rel="icon" href="./assests/icon." type="image/icon type">
+    <link rel="icon" href="./assests/facebook.png" type="image/icon type">
      <link rel="stylesheet" href="tailwind.min.css">
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="mb-10 nav-bar-background sm:py-1 md:pt-2 md:pb-2">
+    <header class="nav-bar-background sm:py-1 md:pt-2 md:pb-2">
         <nav class="flex justify-between">
             <ul class=" hidden lg:flex"></ul>
             <ul class="w-7/12 pl-1 flex justify-start self-end items-center text-2xl lg:max-w-lg xl:nav-height xl:text-4xl text-gray-100  font-extrabold">Facebook</ul>
@@ -40,17 +40,84 @@
         </nav>
     </header>
 
-    <main class="flex justify-between">
-        <ul class="border hidden lg:flex">Empty</ul>
-        <ul class="border w-7/12 text-center lg:max-w-lg">Left</ul>
-        <ul class="border w-5/12 text-center lg:max-w-lg">Right</ul>
-        <ul class="border hidden lg:flex">Empty</ul>
+    <main class="flex justify-between h-screen max-h-screen bg-gray-300 main-bg-gradient">
+        <ul class="border hidden lg:flex"></ul>
+        <ul class="border w-7/12 lg:max-w-lg">
+            <p class="pl-1 text-blue-900">Facebook helps you connect and share with the people in your life.</p>
+        </ul>
+
+        <ul class="border w-5/12 lg:max-w-lg">
+            <p class=" mt-2 font-bold">Create an account</p>
+            <p class="pl-2 text-xs">it's quick and easy.</p>
+
+            <form class="mt-3">
+                <div class="flex mx-1 mb-2">
+                    <input type="text" class="w-1/2 border rounded" placeholder="Surname"/>
+                    <input type="text" class="mx-1 w-1/2 border rounded" placeholder="First Name" />
+                </div>
+                <input type="text" class="w-32 ml-1 mb-2 border rounded" placeholder="Mobile Number or Email Address"/>
+                <input type="text" class="w-32 ml-1 mb-3 border rounded" placeholder="New Password"/>
+                <p class="text-xs text-gray-700">Birthday</p>
+                <div class="text-xs">
+                    <select>
+                        <option value="Day">Day</option>
+                        <script>
+                            for(i=1;i<=31;i++ ){
+                                document.write(`<option value=${i}> ${i}</option>`);
+                            }
+                        </script>
+                    </select>
+
+                    <select>
+                        <option value="Month">Month</option>
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+
+                    <select>
+                        <option value="Year">Year</option>
+                        <script>
+                            for(i=2020;i>=1905;i--){
+                                document.write(`<option value=${i}> ${i}</option>`);
+                            }
+                        </script>
+                    </select>
+
+                    <button type="button" w-4 h-4 bg-gray-300 border rounded">?</button>
+
+                    <p class="text-xs mt-2 text-gray-700">Gender</p>
+                    <div class=" mb-2 flex text-xs">
+                        <form class="flex">
+                            <input type="radio" name="gender" value="male"> Male<br>
+                            <input type="radio" name="gender" value="female"> Female<br>
+                            <input type="radio" name="gender" value="other"> Other
+                            <button type="button" class="bg-gray-300 border w-4 h-4 rounded-full">?</button>
+                        </form>
+                    </div>
+                    <p class="text-xs mb-2">
+                        By clicking Sign Up, you agree to our <span>Terms,</span> <span>Data Policy</span> and <span>Cookie Policy</span>. You may receive SMS notifications from us and can opt out at any time.
+                    </p>
+                    <button type="submit" class="w-auto p-1 bg-gray-500 border rounded">Sign Up</button>
+                </div>
+            </form>
+        </ul>
+        <ul class="border hidden lg:flex"></ul>
     </main>
 
-    <footer class="absolute bottom-0 w-full">
-        <div class="border flex w-full justify-center">Country</div>
-        <div class="border flex w-full justify-center">footer link</div>
-        <div class="border flex w-full justify-center">@Copyright</div>
+    <footer class="absolute bottom-0 w-full bg-gray-100">
+        <div class="py-3 flex w-full justify-center">Country</div>
+        <div class="py-3 flex w-full justify-center">footer link</div>
+        <div class="py-3 flex w-full justify-center">@Copyright</div>
     </footer>
 
 </body>

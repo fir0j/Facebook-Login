@@ -34,6 +34,20 @@ table {
 	font-size: 0.2rem;
 }
 
+.main-bg-gradient {
+	background-image: linear-gradient(to bottom, rgba(253, 253, 253, 0.99), rgba(4, 51, 145, 0.1));
+}
+
+span {
+	color: rgb(13, 13, 175);
+	cursor: pointer;
+}
+
+select {
+	background-color: white;
+	height: 1.8rem;
+}
+
 .textAboveImage {
 	color: #0e385f;
 	font-size: 20px;
