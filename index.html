@@ -23,13 +23,13 @@
                             <td class="">Password</td> 
                         </tr>
                         <tr>
-                            <td><div class="email"><input type="text" class=" w-11/12 h-3 px-1 py-2 sm:w-24 sm:h-4 lg:w-40 lg:h-5 text-xs text-gray-800   "/></div></td>
-                            <td><div class="password"><input type="password" class=" w-11/12 h-3 px-1 py-2 mr-1 text-xs sm:w-24 sm:h-4 lg:w-40 lg:h-5 lg:h-5  md:text-sm text-gray-800   "/></div></td>
+                            <td><div class="email"><input type="text" class=" w-11/12 h-1 px-1 py-2 sm:w-24 sm:h-4 lg:w-40 lg:h-5 text-xs text-gray-800   "/></div></td>
+                            <td><div class="password"><input type="password" class=" w-11/12 h-1 px-1 py-2 mr-1 text-xs sm:w-24 sm:h-4 lg:w-40 lg:h-5 lg:h-5  md:text-sm text-gray-800   "/></div></td>
                             <td><div><button type="button" class=" w-6 mr-1 sm:w-10 sm:h-4 md:h-6 md:w-auto md:px-1 xl:text-xs  border border-gray-800 font-bold nav-button-background">Log In</button></div></td>
                         </tr>
                         <tr colspan="2">
                             <td></td>
-                            <td class="forgo lg:text-xs opacity-50">Forgotten account?</td>
+                            <td class="lg:text-xs opacity-50 text-gray-100">Forgotten account?</td>
                             <td></td>
                         </tr>
                     </table>
@@ -41,25 +41,31 @@
     </header>
 
     <main class="flex justify-between h-screen max-h-screen bg-gray-300 main-bg-gradient">
-        <ul class="border hidden lg:flex"></ul>
-        <ul class="border w-7/12 lg:max-w-lg">
-            <p class="pl-1 text-blue-900">Facebook helps you connect and share with the people in your life.</p>
+        <ul class="hidden lg:flex"></ul>
+        <ul class="w-7/12 sm:pt-2 lg:max-w-lg left-text">
+            <p class="px-1 pt-3 sm:text-sm lg:text-base text-blue-900 font-bold">Facebook helps you connect and share with the</p>
+            <p class="px-1 sm:text-sm lg:text-base text-blue-900 font-bold">people in your life.</p>
         </ul>
 
-        <ul class="border w-5/12 lg:max-w-lg">
-            <p class=" mt-2 font-bold">Create an account</p>
-            <p class="pl-2 text-xs">it's quick and easy.</p>
+        <ul class="w-5/12 sm:pt-2 lg:max-w-lg">
+            <p class=" mt-2 text-sm sm:text-base lg:text-lg text-gray-800 font-extrabold">Create an account</p>
+            <p class="text-sm lg:text-base text-gray-800">it's quick and easy.</p>
 
             <form class="mt-3">
-                <div class="flex mx-1 mb-2">
-                    <input type="text" class="w-1/2 border rounded" placeholder="Surname"/>
-                    <input type="text" class="mx-1 w-1/2 border rounded" placeholder="First Name" />
+                <div class="flex mr-1 mb-2">
+                    <input type="text" class="pl-1 h-4 w-1/2 sm:h-8 sm:text-xs border border-gray-500 rounded" placeholder="First Name" />
+                    <input type="text" class="pl-1 h-4 ml-1 w-1/2 sm:h-8 sm:text-xs border border-gray-500 rounded" placeholder="Surname"/>
                 </div>
-                <input type="text" class="w-32 ml-1 mb-2 border rounded" placeholder="Mobile Number or Email Address"/>
-                <input type="text" class="w-32 ml-1 mb-3 border rounded" placeholder="New Password"/>
-                <p class="text-xs text-gray-700">Birthday</p>
+                <div class="mr-1">
+                    <input type="text" class="w-full h-4 sm:h-8 mb-2 pl-1 sm:text-xs border border-gray-500 rounded" placeholder="Mobile Number or Email Address"/>
+                </div>
+                
+                <div class="mr-1">
+                    <input type="text" class="w-full h-4 sm:h-8 mb-3 pl-1 sm:text-xs border border-gray-500 rounded" placeholder="New Password"/>
+                </div>
+                <p class="mb-1 text-xs sm:text-sm lg:text-base text-gray-700">Birthday</p>
                 <div class="text-xs">
-                    <select>
+                    <select class="lg:w-12 lg:h-6 sm:text-xs lg:text-sm">
                         <option value="Day">Day</option>
                         <script>
                             for(i=1;i<=31;i++ ){
@@ -68,7 +74,7 @@
                         </script>
                     </select>
 
-                    <select>
+                    <select class="sm:mx-1 lg:w-12 lg:h-6 sm:text-xs lg:text-sm">
                         <option value="Month">Month</option>
                         <option value="Jan">Jan</option>
                         <option value="Feb">Feb</option>
@@ -84,7 +90,7 @@
                         <option value="Dec">Dec</option>
                     </select>
 
-                    <select>
+                    <select class="sm:mr-1 lg:w-12 lg:h-6 sm:text-xs lg:text-sm">
                         <option value="Year">Year</option>
                         <script>
                             for(i=2020;i>=1905;i--){
@@ -93,21 +99,45 @@
                         </script>
                     </select>
 
-                    <button type="button" w-4 h-4 bg-gray-300 border rounded">?</button>
+                    <button type="button" class=" help w-4 h-4 lg:w-6 lg:h-6 border rounded-full">?</button>
 
-                    <p class="text-xs mt-2 text-gray-700">Gender</p>
-                    <div class=" mb-2 flex text-xs">
-                        <form class="flex">
-                            <input type="radio" name="gender" value="male"> Male<br>
-                            <input type="radio" name="gender" value="female"> Female<br>
-                            <input type="radio" name="gender" value="other"> Other
-                            <button type="button" class="bg-gray-300 border w-4 h-4 rounded-full">?</button>
+                    <p class="mb-1 sm:mb-2 mt-2 text-xs sm:text-sm lg:text-base text-gray-700">Gender</p>
+                    <div class=" mb-2 flex">
+
+                        <form >
+                            <div class="radios flex">
+                                <div class="flex sm:mr-2">
+                                    <input  class="mr-1" type="radio" name="gender" value="male">
+                                    <p class="sm:text-xs  lg:text-sm">Male</p>
+                                </div>
+                                <div class="flex sm:mr-2">
+                                    <input  class="mr-1" type="radio" name="gender" value="male">
+                                    <p class="sm:text-xs lg:text-sm">Female</p>
+                                </div>
+                                <div class="flex sm:mr-2">
+                                    <input  class="mr-1" type="radio" name="gender" value="male">
+                                    <p class="sm:text-xs lg:text-sm">Others</p>
+                                </div>
+                                <button type="button" class=" help w-4 h-4 lg:w-6 lg:h-6 border rounded-full">?</button>
+                            </div>
+
                         </form>
                     </div>
-                    <p class="text-xs mb-2">
-                        By clicking Sign Up, you agree to our <span>Terms,</span> <span>Data Policy</span> and <span>Cookie Policy</span>. You may receive SMS notifications from us and can opt out at any time.
-                    </p>
-                    <button type="submit" class="w-auto p-1 bg-gray-500 border rounded">Sign Up</button>
+
+                    <div class="agreement mb-4">
+                        <p class="sm:text-xs lg:text-sm">
+                            By clicking Sign Up, you agree to our <span>Terms,</span> <span>Data Policy</span> and <span>Cookie Policy</span>. You may receive SMS notifications from us and can opt out at any time.
+                        </p>
+                    </div>
+
+                    <button type="submit" class="w-20 px-1 mb-6 bg-green-700 lg:text-base text-gray-100 border rounded">Sign Up</button>
+
+                    <div class="createPage">
+                        <p class="sm:text-xs lg:text-sm">
+                            <span>Create a Page</span>  for a celebrity, band or business.
+                        </p>
+                    </div>
+
                 </div>
             </form>
         </ul>
