@@ -8,11 +8,6 @@ body {
 	font-family: 'Lucida Grande', tahoma, verdana, arial, sans-serif;
 }
 
-a {
-	font-family: tahoma, verdana, arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-}
-
 .signup-button {
 	background: linear-gradient(#67ae55, #578843);
 	background-color: #69a74e;
