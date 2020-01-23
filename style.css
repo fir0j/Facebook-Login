@@ -13,6 +13,25 @@ a {
 	-webkit-font-smoothing: antialiased;
 }
 
+.signup-button {
+	background: linear-gradient(#67ae55, #578843);
+	background-color: #69a74e;
+	box-shadow: inset 0 1px 1px #a4e388;
+	border-color: #3b6e22 #3b6e22 #2c5115;
+	color: white;
+}
+
+.signup-button:hover {
+	background: linear-gradient(#85c774, #578843);
+	background-color: #69a74e;
+	box-shadow: inset 0 1px 1px #a4e388;
+	border-color: #3b6e22 #3b6e22 #2c5115;
+}
+
+.login-border {
+	border: 1px solid rgb(49, 45, 45, 0.5);
+}
+
 .nav-bar-background {
 	background-color: var(--nav-bar-background);
 }
