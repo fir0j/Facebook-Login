@@ -39,16 +39,13 @@ main {
 	height: 70vh;
 }
 
-footer {
-	font-size: 0.1rem;
-}
-
 span {
 	color: rgb(13, 13, 175);
 	cursor: pointer;
 }
 
 .languages > * {
+	display: inline-block;
 	margin-right: 0.3rem;
 }
 
@@ -87,6 +84,14 @@ select {
 	font-size: 0.3rem;
 }
 
+.max-w-980 {
+	max-width: 980px;
+}
+
+footer {
+	font-size: 0.1rem;
+}
+
 @media only screen and (min-device-width: 480px) {
 	table .email,
 	.password {
@@ -101,8 +106,10 @@ select {
 
 @media only screen and (min-device-width: 640px) {
 	footer {
-		font-size: 0.5rem;
+		font-size: 0.45rem;
+		/* font-size: 10rem; */
 	}
+
 	.languages > * {
 		margin-right: 1rem;
 	}
@@ -118,12 +125,12 @@ select {
 
 @media only screen and (min-device-width: 768px) {
 	footer {
-		font-size: 0.6rem;
+		font-size: 0.5rem;
 	}
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-device-width: 1024px) {
 	footer {
-		font-size: 0.8rem;
+		font-size: 0.75rem;
 	}
 }
