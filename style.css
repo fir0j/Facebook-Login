@@ -17,10 +17,7 @@ body {
 }
 
 .signup-button:hover {
-	background: linear-gradient(#85c774, #578843);
-	background-color: #69a74e;
-	box-shadow: inset 0 1px 1px #a4e388;
-	border-color: #3b6e22 #3b6e22 #2c5115;
+	background: -webkit-linear-gradient(#79bc64, #578843);
 }
 
 .login-border {
