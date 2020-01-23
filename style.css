@@ -40,7 +40,12 @@ table {
 }
 
 main {
-	height: 50vh;
+	height: auto;
+}
+
+footer {
+	font-size: 0.1rem;
+	background-color: white;
 }
 
 span {
@@ -92,10 +97,6 @@ select {
 	max-width: 1024px;
 }
 
-footer {
-	font-size: 0.1rem;
-}
-
 figure img {
 	margin-top: 2rem;
 	padding-left: 1rem;
@@ -144,6 +145,7 @@ figure img {
 @media only screen and (min-device-width: 1024px) {
 	footer {
 		font-size: 0.75rem;
+		margin-top: 10%;
 	}
 
 	figure img {
