@@ -40,7 +40,7 @@ table {
 }
 
 main {
-	height: 70vh;
+	height: 50vh;
 }
 
 span {
@@ -116,6 +116,10 @@ figure img {
 @media only screen and (min-device-width: 640px) {
 	footer {
 		font-size: 0.5rem;
+	}
+
+	main {
+		height: 70vh;
 	}
 
 	.languages > * {
