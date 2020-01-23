@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
 :root {
 	--nav-bar-background: #3b5998;
 	--primary-button-background: #4267b2;
@@ -8,6 +6,11 @@
 
 body {
 	font-family: 'Lucida Grande', tahoma, verdana, arial, sans-serif;
+}
+
+a {
+	font-family: tahoma, verdana, arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 
 .nav-bar-background {
